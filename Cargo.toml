@@ -1,0 +1,15 @@
+[package]
+name = "fundamental"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-recursion = "1.0.0"
+clap = { version = "3.1.7", features = ["derive"] }
+crates_io_api = { version = "0.8.0", features = ["rustls"], default-features = false }
+futures = "0.3.21"
+tokio = { version = "1.17.0", features = ["rt-multi-thread", "macros", "sync"] }
+tracing = "0.1.32"
+tracing-subscriber = { version = "0.3.9", features = ["env-filter"] }
