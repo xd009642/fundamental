@@ -10,6 +10,9 @@ async-recursion = "1.0.0"
 clap = { version = "3.1.7", features = ["derive"] }
 crates_io_api = { version = "0.8.0", features = ["rustls"], default-features = false }
 futures = "0.3.21"
+octocrab = { version = "0.15.4"}
+serde = { version = "1.0.136", features = ["derive"] }
+serde_json = "1.0.79"
 tokio = { version = "1.17.0", features = ["rt-multi-thread", "macros", "sync"] }
 tracing = "0.1.32"
 tracing-subscriber = { version = "0.3.9", features = ["env-filter"] }
