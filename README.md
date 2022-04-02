@@ -22,6 +22,25 @@ in the env var `GITHUB_API_TOKEN`. Additionally, to respect the crates.io
 crawler policy it will grab `git config user.email` and add it to the
 user-agent. So please be considerate in using it.
 
+Help text:
+
+```
+fundamental 0.1.0
+
+USAGE:
+    fundamental [OPTIONS] --input <INPUT>
+
+OPTIONS:
+        --dev                      process dev dependencies as well
+    -h, --help                     Print help information
+    -i, --input <INPUT>            Name of the crate to inspect
+        --max-depth <MAX_DEPTH>    Max depth to crawl [default: 1000]
+        --ordering <ORDERING>      Method to sort, if not [possible values: ascending, descending]
+        --sort-by <SORT_BY>        Field to sort by when listing people you can sponsor [possible
+                                   values: contributions, sponsors]
+    -V, --version                  Print version information
+```
+
 Example output:
 
 ```
