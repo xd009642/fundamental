@@ -18,7 +18,9 @@ the people most directly responsible for the projects you love or the people
 who seem underappreciated.
 
 This does call against the github API so you'll need an API token
-in the env var `GITHUB_API_TOKEN`.
+in the env var `GITHUB_API_TOKEN`. Additionally, to respect the crates.io
+crawler policy it will grab `git config user.email` and add it to the
+user-agent. So please be considerate in using it.
 
 Example output:
 
